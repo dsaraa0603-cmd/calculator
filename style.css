@@ -1,0 +1,74 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1e1e2e;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.calculator {
+  background-color: #2b2b3c;
+  padding: 20px;
+  border-radius: 16px;
+  width: 290px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+#display {
+  background-color: #181825;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: right;
+  padding: 20px 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow-x: auto;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 18px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background-color: #3b3b52;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4c4c69;
+}
+
+.btn-clear {
+  background-color: #fab387;
+  color: #1e1e2e;
+  font-weight: bold;
+}
+
+.btn-operator {
+  background-color: #f38ba8;
+  color: #1e1e2e;
+  font-weight: bold;
+}
+
+.btn-equal {
+  background-color: #a6e3a1;
+  color: #1e1e2e;
+  font-weight: bold;
+  grid-row: span 3;
+}
+
+.btn-delete {
+  background-color: #f9e2af;
+  color: #1e1e2e;
+  font-weight: bold;
+}
